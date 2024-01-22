@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="contact.css">
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+
+    <title>Contact Page</title>
+</head>
+
+<body>
+    <header>
+        <a href="../../home.php" class="logo">
+            <img src="../../pics/logo.png">
+            <div class="vert-line"></div>
+            <p>WebArtisans</p>
+        </a>
+        <nav>
+            <ul>
+                <li class="lst-item">
+                    <a href="../../home.php">Home</a>
+                </li>
+                <li class="lst-item dropdown">
+                    <a href="#" class="dropbtn">Members</a>
+                    <div class="dropdown-content">
+                        <a href="../../pages/mohammad/myPage.php">Mohammad</a>
+                        <a href="../../pages/Abood/myPage.php">Abood</a>
+                        <a href="../../pages/omar/myPage.php">Omar</a>
+                        <a href="../../pages/lama/myPage.php">Lama</a>
+                    </div>
+                </li>
+                <li class="lst-item">
+                    <a href="../../pages/contact/contact.html">Contact us</a>
+                </li>
+                <li class="lst-item">
+                    <a href="#">About</a>
+                </li>
+            </ul>
+        </nav>
+        <i class="bx bxs-moon"></i>
+    </header>
+    <main>
+        <form method="post" action="../../submit_message.php">
+            <h2>CONTACT US</h2>
+            <input type="text" name="first_name" placeholder="First Name *" pattern="[a-zA-z]{4,}"
+                title="Please make sure that it's length above" required>
+            <hr>
+            <input type="text" name="last_name" placeholder="Last Name" pattern="[a-zA-z]{4,}"
+                title="Please make sure that it's length above 4"">
+            <hr>
+            <input  name=" email" placeholder="Email" type="email">
+            <hr>
+            <label class="members-box">Group Member: *</label>
+            <select name="team_member" id="team-members-select" required>
+                <option value="Team" selected>Whole Team</option>
+                <option value="Mohammad">Mohammad Abuayyash</option>
+                <option value="Omar">Omar Aljaafrah</option>
+                <option value="Lama">Lama Amer</option>
+                <option value="Abdelrahman">Abdelrahman AbuSaifeen</option>
+            </select>
+            <hr>
+            <textarea name="message" placeholder="Your Message..." required></textarea><br>
+            <button type="submit">SEND</button>
+        </form>
+    </main>
+    <footer>
+        <p>Copywrite &copy; your website 2023</p>
+        <div class="social-media">
+            <a href="#" target="_blank"><i class="bx bxl-linkedin"></i></a>
+            <a href="#" target="_blank"><i class="bx bxl-instagram"></i></a>
+            <a href="#" target="_blank"><i class="bx bxl-github"></i></a>
+        </div>
+        <p>Contact us</p>
+    </footer>
+</body>
+
+</html>
